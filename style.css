@@ -103,18 +103,28 @@ td:nth-child(2n + 1) {
 
 /* 
 Change the background color and text color of the first row 
+Also, fix the header and first column so that they remain fixed as the user scrolls through the table if it exceeds the size of the window
+https://stackoverflow.com/questions/15811653/table-with-fixed-header-and-fixed-column-on-pure-css
 */
 table tr:nth-child(1) {
     background-color: darkgray;
     color: white;
+    /*position: -webkit-sticky;*/
+    position: sticky;
+    top: 0;
 }
 
 /* 
 Change the background color and text color of the first column 
+Also, fix the header and first column so that they remain fixed as the user scrolls through the table if it exceeds the size of the window
+https://stackoverflow.com/questions/15811653/table-with-fixed-header-and-fixed-column-on-pure-css
 */
 table tr td:nth-child(1) {
     background-color: darkgray;
     color: white;
+    /*position: -webkit-sticky;*/
+    position:sticky;
+    left: 0;
 }
 
 /* 
